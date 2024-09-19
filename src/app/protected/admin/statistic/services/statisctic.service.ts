@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment.prod';
 import { HttpClient } from '@angular/common/http';
-import { TotalProffistAndLossResponse, TotalSalesForMonthsResponse } from '../interfaces/interfaces';
+import { TotalProffistAndLossResponse, TotalSalesForMonthsResponse, TotalProductResponse  } from '../interfaces/interfaces';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -24,4 +24,11 @@ export class StatiscticService {
     return this.http.post<TotalProffistAndLossResponse>(url,body);
 
   }
+  getTotalProducts(minYear:number,minMonth:number,maxYear:number,maxMonth:number):Observable<TotalProductResponse>{
+    const url = `${this._baseUrl}/salesPerProduct`;
+    const body= {minDate:`${minMonth + 1}/01/${minYear}`,maxDate:`${maxMonth + 1}/31/${maxYear}`};
+    return this.http.post<TotalProductResponse>(url,body);
+
+  }
+
 }

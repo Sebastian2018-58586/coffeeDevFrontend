@@ -4,6 +4,10 @@
       <button  *ngIf="showButtonAdd" mat-raised-button class="btn-add"  (click)="add()">
         <mat-icon>add_circle_outline</mat-icon>Crear {{ nameComponent }}
       </button>
+  <button mat-raised-button class="pdf-button" (click)="downloadPdf()">
+    <mat-icon>cloud_download</mat-icon>Descargar PDF 
+  </button>
+
     </div>
     <div class="col-xs-10 col-sm-12 col-md-8  dense-3">
       <div class="row g-2 justify-content-end ">

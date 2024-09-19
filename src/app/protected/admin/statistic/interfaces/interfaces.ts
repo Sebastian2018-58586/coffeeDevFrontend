@@ -9,6 +9,11 @@ export interface TotalProffistAndLoss{
   proffits?:number;
   loss?:number;
 }
+export interface TotalSalesPerProduct{
+  name?:string;
+  totalSales?:number;
+}
+
 
 export interface TotalProffistAndLossResponse{
   ok:boolean;
@@ -17,4 +22,9 @@ export interface TotalProffistAndLossResponse{
 export interface TotalSalesForMonthsResponse{
   ok?:boolean;
   list?:TotalSalesForMonths[]
+}
+  export interface TotalProductResponse{
+    ok?:boolean;
+    list?:TotalSalesPerProduct[]
+
 }

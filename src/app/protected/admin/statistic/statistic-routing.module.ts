@@ -11,14 +11,19 @@ const routes: Routes = [
     data: { titulo:null , showCard:false,icon:null},
   },
   {
-    path: 'barras',
+    path: 'ganancias-perdidas',
     component:BarChartComponent,
-    data:{titulo:'Grafica de barras',icon:'equalizer'}
+    data:{titulo:'Grafica de barras de ganancias y perdidas',icon:'equalizer'}
   },
   {
-    path:'lineas',
+    path:'total-ventas',
     component:LineChartComponent,
-    data:{titulo:'Graficos de lineas',icon:'timeline'}
+    data:{titulo:'Graficos de lineas de total de ventas',icon:'timeline'}
+  },
+  {
+    path: 'productos-vendidos',
+    component:BarChartComponent,
+    data:{titulo:'Grafica de barras de productos mas vendidos',icon:'equalizer'}
   },
   {
     path:'**',

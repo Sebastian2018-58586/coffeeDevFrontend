@@ -8,6 +8,12 @@
   background-image: radial-gradient(#f8f6f5 0.5px, transparent 0.5px),
     radial-gradient(#f8f6f5 0.5px, #f8f6f5 0.5px);
 }
+.pdf-button {
+  background-color: #faf2ef;
+  background-image: radial-gradient(#f8f6f5 0.5px, transparent 0.5px),
+    radial-gradient(#f8f6f5 0.5px, #d67b75e1 0.5px);
+  margin-left: 10px;
+}
 table {
   width: 100%;
 }

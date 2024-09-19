@@ -14,7 +14,7 @@ const routes: Routes = [
       {
         path: 'ver/:id',
         component: CreateComponent,
-        data: { titulo:'Listado de Clientes',icon:'article' }
+        data: { titulo:'Listado de s',icon:'article' }
       },
       {
         path: 'crear',

@@ -417,9 +417,11 @@ export class CreateComponent implements OnInit {
         this.manufactureService.createManufacture(this.details_Manufacture, Number(this.authService.user.uid)).subscribe(res => {
           if (res.ok === true) {
             Swal.fire('Guardado', res.msg, 'success');
+           console.log(res.msg)
             this.router.navigateByUrl('empleado/manufactura');
           } else {
             Swal.fire('Error', res.msg, 'error');
+            console.log(res.msg)
           }
         }
         );
